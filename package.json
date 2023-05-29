@@ -1,0 +1,27 @@
+{
+  "name": "users-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx serverless offline",
+    "deploy": "serverless deploy --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.102",
+    "@types/node": "^18.7.13",
+    "prettier": "^2.7.1",
+    "serverless": "^3.22.0",
+    "serverless-offline": "^12.0.4",
+    "serverless-plugin-typescript": "^2.1.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.298.0",
+    "@aws-sdk/lib-dynamodb": "^3.298.0",
+    "aws-lambda": "^1.0.7",
+    "yup": "^1.0.2"
+  }
+}

@@ -89,6 +89,12 @@ functions:
       - httpApi:
           path: /users
           method: get  
+  test:
+    handler: src/handlers.test
+    events:
+      - httpApi:
+          path: /users/integration
+          method: get  
 
 
 

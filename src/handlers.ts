@@ -219,3 +219,21 @@ export const listUsers = async (event: APIGatewayProxyEvent): Promise<APIGateway
     return handleError(error)
   }
 };
+
+export const test = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => { 
+  try {
+
+    const message = "Hello World"
+    return {
+      statusCode: 200,
+      body: JSON.stringify(
+        {
+          message: "Success",
+          input: message,
+        },
+      ),
+    }
+  } catch (error) {
+    return handleError(error)
+  }
+}

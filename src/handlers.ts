@@ -223,7 +223,7 @@ export const listUsers = async (event: APIGatewayProxyEvent): Promise<APIGateway
 export const test = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => { 
   try {
 
-    const message = "Hello World"
+    const message = `Teste CI/CD - ${new Date()}`
     return {
       statusCode: 200,
       body: JSON.stringify(
